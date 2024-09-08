@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider with Animation</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Active image that shows in full screen -->
+        <div class="active-img">
+            <img src="" class="img-fluid fade" id="activeImage" />
+        </div>
+
+        <!-- Thumbnail image box centered in the active image -->
+        <div class="img-box">
+            <div>
+                <img src="./img/img2.jpg" class="main-img" onclick="changeImage('./img/img2.jpg')" />
+                <img src="./img/img3.jpg" class="main-img" onclick="changeImage('./img/img3.jpg')" />
+                <img src="./img/img4.jpg" class="main-img" onclick="changeImage('./img/img4.jpg')" />
+                <div class="btn-box">
+                    <button id="backBtn">Back</button>
+                    <button id="nextBtn">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
